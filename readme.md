@@ -38,7 +38,7 @@ LLM prompt를 효과적으로 작성하는 방법에 대해 다룹니다.
 
 ### 예시를 포함시키기 : one-shot, few-shot
 
-[대표 논문링크:Language Models are Few-Shot Learners](#https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf)
+[대표 논문링크:Language Models are Few-Shot Learners](https://papers.nips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf)
 
 one-shot, few-shot 에서의 shot 은 예시를 준다는 뜻입니다. one-shot은 예시 한개를 프롬프트에 추가 시킨 것이고, few-shot 은 여러개 두었다는 뜻입니다.
 위의 논문에서는 20년도 기준 각 대규모 llm 모델에서  프롬프트에 포함시킨 예시의 갯수와 성능을 비교하는 논문입니다.
@@ -54,7 +54,7 @@ one-shot, few-shot 에서의 shot 은 예시를 준다는 뜻입니다. one-shot
 
 
 [관련 논문 :Chain-of-Thought Prompting Elicits Reasoning
-in Large Language Models](#https://openreview.net/pdf?id=_VjQlMeSB_J)
+in Large Language Models](https://openreview.net/pdf?id=_VjQlMeSB_J)
 
 예시를 주되, 예시가 정답을 추론하는 과정을 설명하는 것입니다. 논문의 예시는 아래와 같습니다.
 
@@ -115,7 +115,7 @@ GPT 3.5 정도의 대규모 모델에서는  COT 의 예시를 주는것이 그�
 
 
 [대표 논문: SELF-CONSISTENCY IMPROVES CHAIN OF THOUGHT
-REASONING IN LANGUAGE MODELS](#https://openreview.net/pdf?id=1PL1NIMMrw)
+REASONING IN LANGUAGE MODELS](https://openreview.net/pdf?id=1PL1NIMMrw)
 
 위의 COT 의 Q와 A 질의를 여러개 만든 다음 가장 많이 정답으로 채택된 답을 채택하는 방식입니다.
 사실, openai 과금된 api 를 쓰려면 이런 토큰이 많이 들어가는 방식은 피하게 되기도 합니다.
@@ -128,7 +128,7 @@ REASONING IN LANGUAGE MODELS](#https://openreview.net/pdf?id=1PL1NIMMrw)
 ### Least-To-Most
 
 [대표 논문: LEAST-TO-MOST PROMPTING ENABLES COMPLEX
-REASONING IN LARGE LANGUAGE MODELS](#https://openreview.net/pdf?id=WZH7099tgfM)
+REASONING IN LARGE LANGUAGE MODELS](https://openreview.net/pdf?id=WZH7099tgfM)
 
 어떤 작업을 한 번에 처리하지 않고 순서대로 프롬프트를 호출하는 방식입니다. 논문 예시에서는 이전의 컨텍스트를 다음 질문에 포함시키기 위해 이전 질문과 응답을 모두 다음 컨텍스트에 추가했습니다.
 
@@ -154,7 +154,7 @@ OpenAI의 rate limit 기준은 다른 api와 다르기 때문에 주의가 필�
 
 그리고 실제 OpenAi api 호출을 통해 운영을 하려면, 위의 rate limit 에 대한 장애처리를 필수적으로 수행을 해야 하는데 그에 대한 best practice 문서링크를 첨부합니다.
 
-[링크:What are the best practices for managing my rate limits in the API?](#https://help.openai.com/en/articles/6891753-what-are-the-best-practices-for-managing-my-rate-limits-in-the-api)
+[링크:What are the best practices for managing my rate limits in the API?](https://help.openai.com/en/articles/6891753-what-are-the-best-practices-for-managing-my-rate-limits-in-the-api)
 
 
 ### 응답을 고정적인 스펙으로 전달받으세요
